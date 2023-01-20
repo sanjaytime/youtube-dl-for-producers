@@ -203,38 +203,3 @@ In the example above, a configuration file is used. This allows us to easily add
 
 The above example config file will:
 
-* Ignore errors
-* Will not overwrite existing videos
-* Will continue downloading in the event a download is interrupted
-* Will download metadata and embed into the resulting video, so that Plex will be able to display this information
-* Will download oldest videos first, so videos can be sorted by "date added" in Plex
-* Will download the best quality up to a maximum of 1080p (prevent 4K downloads)
-* Will format videos with a separate folder for each uploader.
-
-## Docker Image Update
-
-If the system on which the container runs doesn't provide a way to easily update the Docker image (eg: watchtower), simply pull the latest version of the container:
-
-```shell
-docker pull ghcr.io/mikenye/docker-youtube-dl:latest
-```
-
-## Shell access
-
-To get shell access to a running container, execute the following command:
-
-```shell
-docker exec -ti CONTAINER sh
-```
-
-Where `CONTAINER` is the name of the running container.
-
-To start a container with a shell (instead of `youtube-dl`), execute the following command:
-
-```shell
-docker run --rm -ti --entrypoint=/bin/sh ghcr.io/mikenye/docker-youtube-dl:latest
-```
-
-## Support or Contact
-
-Having troubles with the container or have questions? Please [create a new issue](https://github.com/mikenye/docker-youtube-dl/issues).
