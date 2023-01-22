@@ -1,4 +1,10 @@
-# mikenye/youtube-dl
+# youtube-dl for producers! (forked)
+
+# TODO
+* get youtube dl command to work with config
+* create shell script to add aliases to zshrc
+* create backup scripts to run with docker
+
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mikenye/docker-youtube-dl/Deploy)](https://github.com/mikenye/docker-youtube-dl/actions/workflows/deploy.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mikenye/youtube-dl.svg)](https://hub.docker.com/r/mikenye/youtube-dl)
